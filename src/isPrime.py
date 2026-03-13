@@ -1,7 +1,7 @@
-from Exception import MissingArgumentException, Only1ArgumentException, NoPositiveNumberException
+from src.Exception import MissingArgumentException, Only1ArgumentException, NoPositiveNumberException
 
 class IsPrime:
-    
+    @staticmethod
     def is_prime(args):
         if args is None or len(args) == 0:
             raise MissingArgumentException()
