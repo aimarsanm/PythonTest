@@ -1,4 +1,4 @@
-from Exceptions import MissingArgumentException, Only1ArgumentException, NoPositiveNumberException
+from Exception import MissingArgumentException, Only1ArgumentException, NoPositiveNumberException
 
 def is_prime(args):
     if args is None or len(args) == 0:
