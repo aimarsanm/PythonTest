@@ -15,7 +15,7 @@ class IsPrime:
                     raise NoPositiveNumberException()
                 if num == 1:
                     return False
-            except (ValueError, TypeError):
+            except (ValueError, TypeError, OverflowError):
                 raise NoPositiveNumberException()
             for i in range(2, num):
                 if num % i == 0:
